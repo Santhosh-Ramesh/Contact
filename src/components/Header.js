@@ -7,11 +7,11 @@ function Header(props) {
   const location = useLocation();
 
   useEffect(() => {
-    if (location.pathname === '/') {
+    if (location.pathname === '/Contact/') {
       setActiveTab('Home');
-    } else if (location.pathname === '/add') {
+    } else if (location.pathname === '/Contact/add') {
       setActiveTab('AddContact');
-    } else if (location.pathname === '/about') {
+    } else if (location.pathname === '/Contact/about') {
       setActiveTab('About');
     }
   }, [location]);
@@ -19,7 +19,7 @@ function Header(props) {
     <div className="header">
       <p className="logo">Contact App</p>
       <div className="header-right">
-        <Link to="/">
+        <Link to="/Contact/">
           <p
             className={`${activeTab === 'Home' ? 'active' : ''} `}
             onClick={() => setActiveTab('Home')}
@@ -27,7 +27,7 @@ function Header(props) {
             Home
           </p>
         </Link>
-        <Link to="/add">
+        <Link to="/Contact/add">
           <p
             className={`${activeTab === 'AddContact' ? 'active' : ''} `}
             onClick={() => setActiveTab('AddContact')}
@@ -35,7 +35,7 @@ function Header(props) {
             Add contact
           </p>
         </Link>
-        <Link to="/about">
+        <Link to="/Contact/about">
           <p
             className={`${activeTab === 'About' ? 'active' : ''} `}
             onClick={() => setActiveTab('About')}

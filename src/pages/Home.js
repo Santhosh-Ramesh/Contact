@@ -65,7 +65,7 @@ function Home(props) {
                 <td>{data[id].email}</td>
                 <td>{data[id].contact}</td>
                 <td>
-                  <Link to={`/update/${id}`}>
+                  <Link to={`/Contact/update/${id}`}>
                     <button className="btn btn-edit">Edit</button>
                   </Link>
                   <button
@@ -76,7 +76,7 @@ function Home(props) {
                   >
                     Delete
                   </button>
-                  <Link to={`/view/${id}`}>
+                  <Link to={`/Contact/view/${id}`}>
                     <button className="btn btn-view">View</button>
                   </Link>
                 </td>

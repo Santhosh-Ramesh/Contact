@@ -86,7 +86,7 @@ function AddEdit(props) {
         toast.success('Contact Updated successfully!');
       }
 
-      setTimeout(() => history.push('/'), 500);
+      setTimeout(() => history.push('/Contact/'), 500);
     }
   };
 
